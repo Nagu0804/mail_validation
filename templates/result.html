@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
+</head>
+<body style="background-color:rgb(170, 89, 217)">
+<div class="form-center" style="margin-top:120px ">
+  <label class="col-md-3 offset-md-4 text-md-center" style="color:white">
+      <h3 class="page-header text-primary">Result:</h3>
+      <label>{{result}}</label>
+      <form action="/" class="form">
+        <input type="submit" value="Back to Home" class="btn btn-success">
+      </form>
+</div>
+</div>
+</body>
+</html>

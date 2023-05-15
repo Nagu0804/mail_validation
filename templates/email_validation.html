@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Validation</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
+</head>
+<body style="background-color:rgb(170, 89, 217)">
+<div class="form" style="margin-top:120px">
+    <form action="/validate_email" method="post" autocomplete="off">
+        <div class="col-md-4 offset-md-4" style="color:white">
+            <h3 class="page-header" >Email Validating:</h3>
+            <div class="form-group">
+                <label>Enter Email:</label>
+                <input type="text" name="email" class="form-control" required>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submit" class="btn btn-success" >
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
